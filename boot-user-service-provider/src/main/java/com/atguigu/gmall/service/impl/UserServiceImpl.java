@@ -1,6 +1,5 @@
 package com.atguigu.gmall.service.impl;
 
-import com.atguigu.gmall.MongoClientConnectionExample;
 import com.atguigu.gmall.bean.UserAddress;
 import com.atguigu.gmall.service.UserService;
 import org.apache.dubbo.config.annotation.DubboService;
@@ -22,7 +21,6 @@ public class UserServiceImpl implements UserService {
 		UserAddress address2 = new UserAddress(2, "深圳市宝安区西部硅谷大厦B座3层（深圳分校）", "1",
 				"王老师", "010-56253825", "N");
 
-		MongoClientConnectionExample mongoClientConnectionExample = new MongoClientConnectionExample();
 		/*try {
 			Thread.sleep(4000);
 		} catch (InterruptedException e) {

@@ -22,3 +22,5 @@ public class OrderController {
         return orderService.initOrder(userId);
     }
 }
+
+// http://localhost:8081/initOrder/?uid=1
