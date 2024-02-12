@@ -23,4 +23,4 @@ public class OrderController {
     }
 }
 
-// http://localhost:8081/initOrder/?uid=1
+// http://localhost:8080/initOrder/?uid=1
