@@ -29,4 +29,9 @@ public class OrderServiceImpl implements OrderService {
         List<UserAddress> addressList = userService.getUserAddressList(userId);
         return addressList;
     }
+
+    @Override
+    public boolean setUserAddress(UserAddress userAddress) {
+        return userService.setUserAddress(userAddress);
+    }
 }

@@ -15,4 +15,6 @@ public interface UserService {
      * @return
      */
     public List<UserAddress> getUserAddressList(String userId);
+
+    public boolean setUserAddress(UserAddress userAddress);
 }

@@ -10,4 +10,6 @@ public interface OrderService {
      * @param userId
      */
     public List<UserAddress> initOrder(String userId);
+
+    public boolean setUserAddress(UserAddress userAddress);
 }
