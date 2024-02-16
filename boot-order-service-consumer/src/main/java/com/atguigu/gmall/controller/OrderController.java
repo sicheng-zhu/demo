@@ -19,20 +19,10 @@ public class OrderController {
         return orderService.initOrder(userId);
     }
 
-    @PostMapping("/setUserAddress")
-    public Boolean setUserAddress(@RequestBody UserAddress userAddress) {
-        return orderService.setUserAddress(userAddress);
-    }
 }
 
 //http://localhost:8081/initOrder/?uid=1
 //https://zhuanlan.zhihu.com/p/338274693
 //https://blog.csdn.net/a1120467800/article/details/109954145
 
-//{
-//    "userAddress": "1",
-//    "userId": "1",
-//    "consignee": "1",
-//    "phoneNum": "1",
-//    "isDefault": "1"
-//}
+

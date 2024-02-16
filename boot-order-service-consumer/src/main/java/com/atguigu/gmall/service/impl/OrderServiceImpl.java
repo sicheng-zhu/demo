@@ -4,6 +4,7 @@ import com.atguigu.gmall.bean.UserAddress;
 import com.atguigu.gmall.service.OrderService;
 import com.atguigu.gmall.service.UserService;
 import org.apache.dubbo.config.annotation.DubboReference;
+import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,8 +31,4 @@ public class OrderServiceImpl implements OrderService {
         return addressList;
     }
 
-    @Override
-    public boolean setUserAddress(UserAddress userAddress) {
-        return userService.setUserAddress(userAddress);
-    }
 }

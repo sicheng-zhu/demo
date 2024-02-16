@@ -11,5 +11,4 @@ public interface OrderService {
      */
     public List<UserAddress> initOrder(String userId);
 
-    public boolean setUserAddress(UserAddress userAddress);
 }
