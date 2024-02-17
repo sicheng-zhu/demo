@@ -25,16 +25,16 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public ObjectId addUserAddress(UserAddress userAddress) {
-		UserAddress returnedUserAddress = mongoTemplate.save(userAddress);
+		UserAddress returnedUserAddress = mongoTemplate.save(userAddress, "userAddress");
 		return returnedUserAddress.getId();
 	}
 
 	@Override
-	public List<UserAddress> getUserAddressList(String userId) {
-		Query query = Query.query(Criteria.where("userId").is(userId));
-		List<UserAddress> userAddressList = mongoTemplate.find(query, UserAddress.class,"userAddress");
+	public UserAddress getUserAddress(String id) {
+		Query query = Query.query(Criteria.where("_id").is(id));
+		UserAddress userAddress = mongoTemplate.findOne(query, UserAddress.class,"userAddress");
 
-		return userAddressList;
+		return userAddress;
 	}
 
 	@Override

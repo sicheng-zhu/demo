@@ -17,7 +17,7 @@ public interface UserService {
      * @param userId
      * @return
      */
-    public List<UserAddress> getUserAddressList(String userId);
+    public UserAddress getUserAddress(String userId);
 
     public boolean updateUserAddress(UserAddress userAddress);
 

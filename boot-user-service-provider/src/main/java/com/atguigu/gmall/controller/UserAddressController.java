@@ -21,8 +21,8 @@ public class UserAddressController {
     }
 
     @GetMapping("/getUserAddress")
-    public List<UserAddress> getUserAddressList(@RequestParam(value = "userId") String userId) {
-        return userAddressService.getUserAddressList(userId);
+    public UserAddress getUserAddress(@RequestParam(value = "id") String id) {
+        return userAddressService.getUserAddress(id);
     }
 
     @PutMapping("/updateUserAddress")
